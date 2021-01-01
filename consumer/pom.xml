@@ -12,7 +12,7 @@
 	<artifactId>consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>consumer</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Jms with ActiveMQ</description>
 
 	<properties>
 		<java.version>11</java.version>
