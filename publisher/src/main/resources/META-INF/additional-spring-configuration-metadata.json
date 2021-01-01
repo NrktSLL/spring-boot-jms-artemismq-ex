@@ -1,0 +1,12 @@
+{
+  "properties": [
+    {
+      "name": "topic.name",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "queue.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

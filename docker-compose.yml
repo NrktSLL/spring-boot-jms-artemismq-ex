@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  publisherapp:
+    build:
+      context: ./publisher
+    container_name: publisher
+    depends_on:
+      - artemis
+    environment:
+      - ARTEMIS_HOST
+      - ARTEMIS_PORT
+      - ARTEMIS_USERNAME
+      - ARTEMIS_PASSWORD
+      - QUEUE_NAME
+      - TOPIC_NAME
+    ports:
+      - ${PUBLISHER_SERVER_PORT}:${PUBLISHER_SERVER_PORT}
+
+  consumerapp:
+    build:
+      context: ./consumer
+    container_name: consumer
+    depends_on:
+      - artemis
+    environment:
+      - ARTEMIS_HOST     
+      - ARTEMIS_PORT
+      - ARTEMIS_USERNAME
+      - ARTEMIS_PASSWORD
+      - QUEUE_NAME
+      - TOPIC_NAME
+    ports:
+      - ${CONSUMER_SERVER_PORT}:${CONSUMER_SERVER_PORT}
+
+  artemis:
+    image: vromero/activemq-artemis
+    container_name: artemis
+    environment:
+      - ARTEMIS_USERNAME
+      - ARTEMIS_PASSWORD
+    ports:
+      - ${ARTEMIS_DEFAULT_PORT}:${ARTEMIS_DEFAULT_PORT}
+      - ${ARTEMIS_PORT}:${ARTEMIS_PORT}
+    volumes:
+      - ./data/artemis-data:/var/lib/artemis/data:Z
