@@ -1,0 +1,13 @@
+name: Docker Compose Actions Workflow
+
+on: push
+
+jobs:
+  Build-Project:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Docker Compose Up
+      run: docker-compose -f docker-compose.yml up -d
+    - name: Show Containers
+      run: docker ps -a
