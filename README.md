@@ -1,10 +1,10 @@
-# Spring Boot Jms with ActiveMQ Example 
+# Spring Boot Jms with ActiveMQ Artemis Example 
 
 <p align="center">
-<img src="https://github.com/NrktSLL/spring-boot-jms-artemismq-ex/blob/master/image/activemq.png" alt="# Spring Boot Jms with ActiveMQ Example " width="50%" height="50%"/> 
+<img src="https://github.com/NrktSLL/spring-boot-jms-artemismq-ex/blob/master/image/activemq.png" alt="# Spring Boot Jms with ActiveMQ Artemis Example " width="50%" height="50%"/> 
 </p>
 
->ArtemisMQ example with jms.
+>ActiveMQ Artemis example with jms.
 >
 
 ## Prerequisites
@@ -32,4 +32,4 @@ docker-compose up -d
 <img src="https://github.com/NrktSLL/spring-boot-jms-artemismq-ex/blob/master/image/spring-boot-jms-artemismq-ex.png" alt="# Spring Boot Jms with ActiveMQ Example " width="100%" height="100%"/> 
 
 ## ArtmeisMQ Management Console
-<img src="https://github.com/NrktSLL/spring-boot-jms-artemismq-ex/blob/master/image/activemq-ui.png" alt="# Spring Boot Jms with ActiveMQ Example " width="100%" height="100%"/> 
+<img src="https://github.com/NrktSLL/spring-boot-jms-artemismq-ex/blob/master/image/activemq-ui.png" alt="# Spring Boot Jms with ActiveMQ Artemis Example " width="100%" height="100%"/> 
