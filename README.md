@@ -9,8 +9,8 @@
 
 ## Prerequisites
 
-*  Docker <B>20.10.0</B> or more recent
-*  Docker Compose <B>1.27.4</B> or more recent
+*  Docker
+*  Docker Compose
 
 ## Installation
 
